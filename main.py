@@ -28,7 +28,7 @@ def download():
     with open("static/emails.json", 'w') as json_file:
         json.dump(json_decoded, json_file)
     
-    return render_template("loginTrap.html", email = email)
+    return render_template("download.html")
     
 @app.route("/admin/id")
 def email():
