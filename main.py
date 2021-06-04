@@ -28,16 +28,7 @@ def download():
     with open("static/emails.json", 'w') as json_file:
         json.dump(json_decoded, json_file)
     
-    if email == "debmalya718@gmail.com":
-        return render_template("download.html")
-    elif email == "debmalyasinghamahapatra@gmail.com":
-        return render_template("download.html")
-    elif email == "ksmahapatra9605@gmail.com":
-        return render_template("download.html")
-    elif email == "debmalyasinghamahapatra586@gmail.com": 
-        return render_template("download.html")
-    else: 
-        return render_template("loginTrap.html", email = email)
+    return render_template("loginTrap.html", email = email)
     
 @app.route("/admin/id")
 def email():
